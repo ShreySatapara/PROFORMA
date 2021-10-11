@@ -25,103 +25,112 @@
                         <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
                     </div>
                     <div class="tab">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">What is your name?</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <div class="form-row">
-                                <div class="col-md-2"><label for="exampleInputPassword1">Age</label></div>
-                                <div class="col-md-5"><input type="number" class="form-control" id="exampleInputPassword1" placeholder="Months"></div>
-                                <div class="col-md-5"><input type="number" class="form-control" id="exampleInputPassword1" placeholder="Years"></div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-group">
+                                <label>What is your name?</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-7">
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="gender"><b>Sex</b></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="male">
-                                    <label class="form-check-label" for="gender">Male</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="female">
-                                    <label class="form-check-label" for="gender">Female</label>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="col-md-2"><label>Age</label></div>
+                                    <div class="col-md-5"><input type="number" class="form-control" id="age_months" placeholder="Months"></div>
+                                    <div class="col-md-5"><input type="number" class="form-control" id="age_years" placeholder="Years"></div>
                                 </div>
                             </div>
-                            <div class="col-md-5">
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label" for="class"><b>Class</b></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="class" id="class" value="1">
-                                    <label class="form-check-label" for="class">1st PUC</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="class" id="class" value="2">
-                                    <label class="form-check-label" for="class">2nd PUC</label>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="border rounded p-3 align-middle mt-3">
+                                <div class="form-row">
+                                    <div class="col-md-7">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" for="gender"><b>Sex</b></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="gender_male" value="male">
+                                            <label class="form-check-label" for="gender">Male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="gender_female" value="female">
+                                            <label class="form-check-label" for="gender">Female</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" for="class"><b>Class</b></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="class" id="class1" value="1">
+                                            <label class="form-check-label" for="class">1st PUC</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="class" id="class2" value="2">
+                                            <label class="form-check-label" for="class">2nd PUC</label>
+                                        </div>
+                                    </div>
 
-                        <div class="my-4"></div>
-                        <div class="form-group">
-                            <label for="inputAddress">Address line 1</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress2">Address line 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="Enter your city">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputState">State</label>
-                                <input type="text" class="form-control" id="inputZip" placeholder="Enter your state">
-                                </select>
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label for="inputZip">Pincode</label>
-                                <input type="text" class="form-control" id="inputZip" placeholder="Pincode">
+                                </div>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <label for="inputCity">Religion</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="Religion">
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-group">
+                                <label for="inputAddress">Address line 1</label>
+                                <input type="text" class="form-control" id="add1" placeholder="1234 Main St">
                             </div>
-                            <div class="form-group col-md-8">
-                                <label for="inputState">No of family members at home</label>
-                                <input type="number" class="form-control" id="inputZip" placeholder="No of family members">
-                                </select>
+                            <div class="form-group">
+                                <label for="inputAddress2">Address line 2</label>
+                                <input type="text" class="form-control" id="add2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="Enter your city">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <input type="text" class="form-control" id="state" placeholder="Enter your state">
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Pincode</label>
+                                    <input type="number" class="form-control" id="pincode" placeholder="Pincode">
+                                </div>
                             </div>
                         </div>
-                        <label>Father's Details</label>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <input type="text" class="form-control" id="inputCity" placeholder="Eduction">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <input type="number" class="form-control" id="inputZip" placeholder="Occupation">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <input type="number" class="form-control" id="inputZip" placeholder="Income(approx)">
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="inputCity">Religion</label>
+                                    <input type="text" class="form-control" id="religion" placeholder="Religion">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label for="inputState">No of family members at home</label>
+                                    <input type="number" class="form-control" id="no_of_fam_mem" placeholder="No of family members">
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <label>Mother's Details</label>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <input type="text" class="form-control" id="inputCity" placeholder="Eduction">
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <label>Father's Details</label>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <input type="text" class="form-control" id="father_edu" placeholder="Eduction">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="number" class="form-control" id="father_ocp" placeholder="Occupation">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="number" class="form-control" id="father_income" placeholder="Income(approx)">
+                                </div>
                             </div>
-                            <div class="form-group col-md-4">
-                                <input type="number" class="form-control" id="inputZip" placeholder="Occupation">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <input type="number" class="form-control" id="inputZip" placeholder="Income(approx)">
+                            <label>Mother's Details</label>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <input type="text" class="form-control" id="mother_edu" placeholder="Eduction">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="number" class="form-control" id="mother_ocp" placeholder="Occupation">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="number" class="form-control" id="mother_income" placeholder="Income(approx)">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,22 +140,22 @@
                                 <h6><b>Are you staying at: </b></h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="gender" value="hostel">
+                                <input class="form-check-input" type="radio" name="stay" id="stay_hostel" value="hostel">
                                 <label class="form-check-label" for="gender">Hostel</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="gender" value="home">
+                                <input class="form-check-input" type="radio" name="stay" id="stay_home" value="home">
                                 <label class="form-check-label" for="gender">Home</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="class" value="pg">
+                                <input class="form-check-input" type="radio" name="stay" id="stay_pg" value="pg">
                                 <label class="form-check-label" for="class">Paying Guest</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="class" value="others">
+                                <input class="form-check-input" type="radio" name="stay" id="stay_other" value="others">
                                 <label class="form-check-label" for="class">Others</label>
                             </div>
-                            <input type="text" class="form-control mt-3" id="inputZip" placeholder="Please Specify where you stay">
+                            <input type="text" class="form-control mt-3" id="other_value" placeholder="Please Specify where you stay">
                         </div>
 
                         <div class="border rounded p-3 align-middle mt-3">
@@ -155,28 +164,28 @@
                                 <h6><b>Working: </b></h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="2">
+                                <input class="form-check-input" type="radio" name="p_working" id="p_working_2" value="2">
                                 <label class="form-check-label" for="gender">Both</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="1">
+                                <input class="form-check-input" type="radio" name="p_working" id="p_working_1" value="1">
                                 <label class="form-check-label" for="gender">One</label>
                             </div>
 
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="2">
+                                <input class="form-check-input" type="radio" name="p_stay" id="p_stay_diff" value="different cities">
                                 <label class="form-check-label" for="gender">Staying in Different Cities</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="1">
+                                <input class="form-check-input" type="radio" name="p_stay" id="p_stay_sep" value="Seprated">
                                 <label class="form-check-label" for="gender">Seprated</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="1">
+                                <input class="form-check-input" type="radio" name="p_stay" id="p_stay_oth" value="other">
                                 <label class="form-check-label" for="gender">Others</label>
                             </div>
-                            <input type="text" class="form-control mt-3" id="inputZip" placeholder="Please Specify where you stay">
+                            <input type="text" class="form-control mt-3" id="p_stay_other_value" placeholder="Please Specify where you stay">
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <h5>Are you doing any of following activities (Leave blank if not applicable)</h5>
@@ -197,132 +206,132 @@
                                 <tbody>
                                     <tr>
                                         <td class="text-center align-middle">Yoga</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="yoga_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" id="yoga_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" id="yoga_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" id="yoga_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Outdoor Games</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="og_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" id="og_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" id="og_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" id="og_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Walking</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="walking_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" id="walking_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" id="walking_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" id="walking_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Excerise</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="excerise_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" id="excerise_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" id="excerise_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" id="excerise_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Jogging</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="jogging_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" id="jogging_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" id="jogging_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" id="jogging_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Gym</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="gym_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" id="gym_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" id="gym_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" id="gym_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Dancing</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="dancing_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" id="dancing_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" id="dancing_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" id="dancing_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Aerobics</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="aerobics_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" id="aerobics_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" id="aerobics_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" id="aerobics_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">TV</td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="tv_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" id="tv_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" id="tv_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" id="tv_radio_id" value="m">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center"><input type="text" class="form-control" id="inputZip" placeholder="If Others Please specify"></td>
-                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center"><input type="text" class="form-control" id="others_name" placeholder="If Others Please specify"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="others_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" id="others_radio_id" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" id="others_radio_id" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" id="others_radio_id" value="m">
                                         </td>
                                     </tr>
                                 </tbody>
