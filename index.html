@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-8">
+                <form id="regForm">
+                    <h1 id="register">Survey Form</h1>
+                    <div class="all-steps" id="all-steps">
+                        <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="tab">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">What is your name?</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-md-2"><label for="exampleInputPassword1">Age</label></div>
+                                <div class="col-md-5"><input type="number" class="form-control" id="exampleInputPassword1" placeholder="Months"></div>
+                                <div class="col-md-5"><input type="number" class="form-control" id="exampleInputPassword1" placeholder="Years"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-7">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label" for="gender"><b>Sex</b></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="male">
+                                    <label class="form-check-label" for="gender">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="female">
+                                    <label class="form-check-label" for="gender">Female</label>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label" for="class"><b>Class</b></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="class" id="class" value="1">
+                                    <label class="form-check-label" for="class">1st PUC</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="class" id="class" value="2">
+                                    <label class="form-check-label" for="class">2nd PUC</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-4"></div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address line 1</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address line 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Enter your city">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Enter your state">
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Pincode</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Pincode">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Religion</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Religion">
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="inputState">No of family members at home</label>
+                                <input type="number" class="form-control" id="inputZip" placeholder="No of family members">
+                                </select>
+                            </div>
+                        </div>
+                        <label>Father's Details</label>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="inputCity" placeholder="Eduction">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="number" class="form-control" id="inputZip" placeholder="Occupation">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="number" class="form-control" id="inputZip" placeholder="Income(approx)">
+                            </div>
+                        </div>
+                        <label>Mother's Details</label>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="inputCity" placeholder="Eduction">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="number" class="form-control" id="inputZip" placeholder="Occupation">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="number" class="form-control" id="inputZip" placeholder="Income(approx)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="border rounded p-3 align-middle">
+                            <div class="form-check form-check-inline">
+                                <h6><b>Are you staying at: </b></h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="gender" value="hostel">
+                                <label class="form-check-label" for="gender">Hostel</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="gender" value="home">
+                                <label class="form-check-label" for="gender">Home</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="class" value="pg">
+                                <label class="form-check-label" for="class">Paying Guest</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="class" value="others">
+                                <label class="form-check-label" for="class">Others</label>
+                            </div>
+                            <input type="text" class="form-control mt-3" id="inputZip" placeholder="Please Specify where you stay">
+                        </div>
+
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h5>Parents are: </h5>
+                            <div class="form-check form-check-inline">
+                                <h6><b>Working: </b></h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="2">
+                                <label class="form-check-label" for="gender">Both</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="1">
+                                <label class="form-check-label" for="gender">One</label>
+                            </div>
+
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="2">
+                                <label class="form-check-label" for="gender">Staying in Different Cities</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="1">
+                                <label class="form-check-label" for="gender">Seprated</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pworking" id="gender" value="1">
+                                <label class="form-check-label" for="gender">Others</label>
+                            </div>
+                            <input type="text" class="form-control mt-3" id="inputZip" placeholder="Please Specify where you stay">
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h5>Are you doing any of following activities (Leave blank if not applicable)</h5>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" class="text-center align-middle">Activity</th>
+                                        <th rowspan="2" class="text-center align-middle">Hours</th>
+                                        <th colspan=3 class="text-center align-middle">Per</th>
+
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center align-middle">Day</th>
+                                        <th class="text-center align-middle">Week</th>
+                                        <th class="text-center align-middle">Month</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center align-middle">Yoga</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Outdoor Games</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Walking</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Excerise</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Jogging</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Gym</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Dancing</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Aerobics</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">TV</td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><input type="text" class="form-control" id="inputZip" placeholder="If Others Please specify"></td>
+                                        <td class="text-center"><input type="number" class="form-control" id="inputZip" placeholder="#hours"></td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="d">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="w">
+                                        </td>
+                                        <td class="text-center">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="pworking" id="yoga" value="m">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6><b>Do you consume junk food/street food: </b></h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <label class="form-check-label" for="gender">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">No</label>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
+                                <div class="col-md-8"><input type="number" class="form-control" id="inputZip" placeholder="Since how many years you eat junk/street food">
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-md-3"><label class="align-middle">How many times?</label></div>
+                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="in a day/week/month">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                        <label class="align-middle mr-2" for="gender">Daily</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                        <label class="align-middle mr-2" for="gender">Weekly</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                        <label class="align-middle" for="class">Monthly</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div>
+                                <h5><b>Do you have habbit of </b></h5>
+                            </div>
+                            <div class="border rounded p-3 align-middle mt-3">
+                                <div class="form-check form-check-inline">
+                                    <h6><b>Smoking</b></h6>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                    <label class="form-check-label" for="gender">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                    <label class="form-check-label" for="gender">No</label>
+                                </div>
+                                <div class="form-row mt-3">
+                                    <div class="col-md-4"><label class="align-middle">How frequently?</label></div>
+
+                                    <div class="col-md-8">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                            <label class="align-middle mr-2" for="gender">Daily</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                            <label class="align-middle mr-2" for="gender">Weekly</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                            <label class="align-middle" for="class">Monthly</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row mt-3">
+                                    <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Years">
+                                    </div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Months">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border rounded p-3 align-middle mt-3">
+                                <div class="form-check form-check-inline">
+                                    <h6><b>Alcohol</b></h6>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                    <label class="form-check-label" for="gender">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                    <label class="form-check-label" for="gender">No</label>
+                                </div>
+                                <div class="form-row mt-3">
+                                    <div class="col-md-4"><label class="align-middle">How frequently?</label></div>
+
+                                    <div class="col-md-8">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                            <label class="align-middle mr-2" for="gender">Daily</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                            <label class="align-middle mr-2" for="gender">Weekly</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                            <label class="align-middle" for="class">Monthly</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row mt-3">
+                                    <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Years">
+                                    </div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Months">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border rounded p-3 align-middle mt-3">
+                                <div class="form-check form-check-inline">
+                                    <h6><b>Consumption of tobacco or any drugs?</b></h6>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                    <label class="form-check-label" for="gender">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                    <label class="form-check-label" for="gender">No</label>
+                                </div>
+                                <div class="form-row mt-3">
+                                    <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Years">
+                                    </div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Months">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6><b>Are you using social media? (Facebook, Whatsapp, Instagram, Pokemon Go etc.)</b></h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <label class="form-check-label" for="gender">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">No</label>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
+                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Years">
+                                </div>
+                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Months">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6><b>Which social media sites you are using?</b></h6>
+                            </div>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" class="text-center align-middle">Social Media Site</th>
+                                        <th rowspan="2" class="text-center align-middle mx-5">Tick</th>
+                                        <th colspan="2" class="text-center align-middle ml-5">How Long</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center align-middle ml-5">Years</th>
+                                        <th class="text-center align-middle">Months</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center align-middle">Facebook</td>
+                                        <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Whatsapp</td>
+                                        <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Internet Gaming</td>
+                                        <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">YouTube</td>
+                                        <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Twitter</td>
+                                        <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">Instagram</td>
+                                        <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle">TikTok/MX Takatak etc.</td>
+                                        <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center align-middle"><input type="text" placeholder="If Others Please Specify" class="form-control"></td>
+                                        <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h6>For what purpose you use social media?</h6>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your responce here">
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h6>Most common social media accessed by you (From those answered in above table)</h6>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your comma seprated responce here">
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6>Common gadget you use to access social media</h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="gender" value="hostel">
+                                <label class="form-check-label" for="gender">Computer</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="gender" value="home">
+                                <label class="form-check-label" for="gender">Mobile</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="class" value="pg">
+                                <label class="form-check-label" for="class">Tab/iPad</label>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h6>How much money do you spend for recharging data plan(Internet) per month(approx)</h6>
+                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6><b>How many hours do you use internet</b></h6>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-md-3"><label class="align-middle">Hours per day/week/month</label></div>
+                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                        <label class="align-middle mr-2" for="gender">Daily</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                        <label class="align-middle mr-2" for="gender">Weekly</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                        <label class="align-middle" for="class">Monthly</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h6><b>Whrere do you use social media?</b></h6>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="gender" value="hostel">
+                                <label class="form-check-label" for="gender">Residence</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="gender" value="home">
+                                <label class="form-check-label" for="gender">College</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="class" value="pg">
+                                <label class="form-check-label" for="class">Cyber Cafe</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="class" value="others">
+                                <label class="form-check-label" for="class">Driving</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="class" value="others">
+                                <label class="form-check-label" for="class">Walking</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="class" value="others">
+                                <label class="form-check-label" for="class">others</label>
+                            </div>
+                            <input type="text" class="form-control mt-3" id="inputZip" placeholder="If Others Please Specify">
+                            <div class="border rounded p-3 align-middle mt-3">
+                                <h6>If you used while walking/driving have you met with an accident/bumped/tripped</h6>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="gender" value="hostel">
+                                    <label class="form-check-label" for="gender">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="gender" value="home">
+                                    <label class="form-check-label" for="gender">No</label>
+                                </div>
+                                <div class="border rounded p-3 align-middle mt-3">
+                                    <h6>Even after that event, have you continued to use social media while driving/walking</h6>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="stay" id="gender" value="hostel">
+                                        <label class="form-check-label" for="gender">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="stay" id="gender" value="home">
+                                        <label class="form-check-label" for="gender">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-row">
+                                <div class="col-md-7">
+                                    <h6>When you open a computer/mobile/tab, what do you first check?</h6>
+                                </div>
+                                <div class="col-md-5">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected hidden>Select Social Media</option>
+                                        <option value="1">Facebook</option>
+                                        <option value="2">Whatsapp</option>
+                                        <option value="3">Instagram</option>
+                                        <option value="3">Twitter</option>
+                                        <option value="3">YouTube</option>
+                                        <option value="3">TikTok/MX Taktak etc</option>
+                                        <option value="3">Others</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="If Others Please Specify">
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+
+                            <h6>Do you hear sounds of phone ringing or feel phone vibrating when it had actually not:</h6>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <label class="form-check-label" for="gender">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">No</label>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6>Do you fear being out of internet coverage area: </h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <label class="form-check-label" for="gender">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">No</label>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h5><b>Refer this abbrivation to answer questions given in table bellow</b></h5>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-center">Never</th>
+                                        <th scope="col" class="text-center">Rarely</th>
+                                        <th scope="col" class="text-center">Occasionally</th>
+                                        <th scope="col" class="text-center">Often</th>
+                                        <th scope="col" class="text-center">Always</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">R</td>
+                                        <td class="text-center">OC</td>
+                                        <td class="text-center">O</td>
+                                        <td class="text-center">A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h5>Did you ever feel any of the following when you used social media for a long time?
+                            </h5>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="align-middle text-center"></th>
+                                        <th class="align-middle text-center border">N</th>
+                                        <th class="align-middle text-center border">R</th>
+                                        <th class="align-middle text-center border">OC</th>
+                                        <th class="align-middle text-center border">O</th>
+                                        <th class="align-middle text-center border">A</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle">Sleep disturbance
+                                        </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Neck pain</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Strain on eyes</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Watering eyes</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Back pain </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Headache</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Tiredness </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Blurring of far objects and wordings</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Wrist pain</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Shoulder pain</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Stiffness of neck</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Neglect personal hygiene
+                                        </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Gastritis</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Tension</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Failure to eat regularly </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle"><input type="text" class="form-control" placeholder="If Others Please Specify"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6>Do you take photos of one’s self at least three times a day but not posting them on social media?</h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <label class="form-check-label" for="gender">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">No</label>
+                            </div>
+                            <div class="border rounded p-3 align-middle mt-3">
+                                <div class="form-check form-check-inline">
+                                    <h6>Do you take photos of one’s self at least three times a day and post each of the photos: </h6>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                    <label class="form-check-label" for="gender">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                    <label class="form-check-label" for="gender">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6>Do you have urge to take photos of yourself round the clock and post on social media ?</h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <label class="form-check-label" for="gender">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">No</label>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6>In case you are not able to post photos or status updates or people do not like your photo, do you experience: </h6>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="junkfood" value="hostel">
+                                <label class="form-check-label" for="gender">Anger</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">Anxious</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">Depressed</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="stay" id="junkfood" value="home">
+                                <label class="form-check-label" for="gender">Nothing at all</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="text" placeholder="If Others Please specify">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h5><b>Refer this abbrivation to answer questions given in table bellow</b></h5>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-center">Never</th>
+                                        <th scope="col" class="text-center">Rarely</th>
+                                        <th scope="col" class="text-center">Occasionally</th>
+                                        <th scope="col" class="text-center">Often</th>
+                                        <th scope="col" class="text-center">Always</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">R</td>
+                                        <td class="text-center">OC</td>
+                                        <td class="text-center">O</td>
+                                        <td class="text-center">A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="align-middle text-center">
+                                            Question
+                                        </th>
+                                        <th class="align-middle text-center border">N</th>
+                                        <th class="align-middle text-center border">R</th>
+                                        <th class="align-middle text-center border">OC</th>
+                                        <th class="align-middle text-center border">O</th>
+                                        <th class="align-middle text-center border">A</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle">Do you stay on social media longer than you intended?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you form relationship with fellow social media users.</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Have your grades/academic work/household work suffered or have you neglected family /friends because of time you spend on social media?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you check social media before something else you were supposed to do?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you block out disturbing thoughts about your life with soothing thoughts of the social media?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you find yourself anticipating/fantasize about when you will go on social media again?
+                                        </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do others in your life complain to you about the amount of time you spend on social media?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you yell,or act annoyed if someone bothers you when you are on social media</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you try to cut down the amount of time you spend on social media & fail?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h5>When you are offline, do you feel?</h5>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="align-middle text-center"></th>
+                                        <th class="align-middle text-center border">N</th>
+                                        <th class="align-middle text-center border">R</th>
+                                        <th class="align-middle text-center border">OC</th>
+                                        <th class="align-middle text-center border">O</th>
+                                        <th class="align-middle text-center border">A</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle">Depressed</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Moody</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Anxious</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Irritable</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Anger</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Relief</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Lonely</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Fustration</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h6>What are the games you play on social media(on internet):</h6>
+                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6>Each time when you go for gaming on social media, how long you spend?</h6>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                        <label class="align-middle mr-2" for="gender">Hours</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                        <label class="align-middle mr-2" for="gender">Minutes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6>How often you go for gaming on social media?</h6>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-md-3"><label class="align-middle">Per Day/Week/Month</label></div>
+                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                        <label class="align-middle mr-2" for="gender">Daily</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                        <label class="align-middle mr-2" for="gender">Weekly</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                        <label class="align-middle" for="class">Monthly</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <div class="form-check form-check-inline">
+                                <h6>How much money you spend on internet gaming per month?</h6>
+                                <input type="number" class="form-control" id="inputZip" placeholder="">
+                            </div>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <h5><b>Refer this abbrivation to answer questions given in table bellow</b></h5>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-center">Never</th>
+                                        <th scope="col" class="text-center">Rarely</th>
+                                        <th scope="col" class="text-center">Occasionally</th>
+                                        <th scope="col" class="text-center">Often</th>
+                                        <th scope="col" class="text-center">Always</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">R</td>
+                                        <td class="text-center">OC</td>
+                                        <td class="text-center">O</td>
+                                        <td class="text-center">A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="border rounded p-3 align-middle mt-3">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="align-middle text-center">
+                                            Question
+                                        </th>
+                                        <th class="align-middle text-center border">N</th>
+                                        <th class="align-middle text-center border">R</th>
+                                        <th class="align-middle text-center border">OC</th>
+                                        <th class="align-middle text-center border">O</th>
+                                        <th class="align-middle text-center border">A</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle">When you are not gaming, do you think about playing a game or think about how would it feel to play at that moment?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you play longer than originally planned?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you feel depressed or irritable when not gaming and do you start playing again only for these feelings to disappear?
+                                        </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you fail to meet up with a friend /social gatherings because you were gaming?
+                                        </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you argue with your parents and/or your partner because of gaming or neglect other activities because of gaming?</td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">Do you try to cut down the amount of time you spend on gaming and fail?
+                                        </td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="thanks-message text-center" id="text-message">
+                        <p style="font-size:100px">&#128522;</p>
+                        <h3>Thank you answering</h3><span>I really appreciate your efforts </span><br><br><br>
+                        <span>Dr. Niket Satapara</span>
+                    </div>
+                    <div style="overflow:auto;" class="mt-3" id="nextprevious">
+                        <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-angle-double-left"></i></button> <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-double-right"></i></button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="form.js"></script>
+
+</html>
