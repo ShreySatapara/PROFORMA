@@ -140,19 +140,19 @@
                                 <h6><b>Are you staying at: </b></h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="stay_hostel" value="hostel">
+                                <input class="form-check-input" type="radio" name="stay_radio" value="hostel">
                                 <label class="form-check-label" for="gender">Hostel</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="stay_home" value="home">
+                                <input class="form-check-input" type="radio" name="stay_radio" value="home">
                                 <label class="form-check-label" for="gender">Home</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="stay_pg" value="pg">
+                                <input class="form-check-input" type="radio" name="stay_radio" value="pg">
                                 <label class="form-check-label" for="class">Paying Guest</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="stay_other" value="others">
+                                <input class="form-check-input" type="radio" name="stay_radio" value="others">
                                 <label class="form-check-label" for="class">Others</label>
                             </div>
                             <input type="text" class="form-control mt-3" id="other_value" placeholder="Please Specify where you stay">
@@ -164,25 +164,25 @@
                                 <h6><b>Working: </b></h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="p_working" id="p_working_2" value="2">
+                                <input class="form-check-input" type="radio" name="p_working_radio" value="2">
                                 <label class="form-check-label" for="gender">Both</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="p_working" id="p_working_1" value="1">
+                                <input class="form-check-input" type="radio" name="p_working_radio" value="1">
                                 <label class="form-check-label" for="gender">One</label>
                             </div>
 
                             <br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="p_stay" id="p_stay_diff" value="different cities">
+                                <input class="form-check-input" type="radio" name="p_stay_radio" value="different cities">
                                 <label class="form-check-label" for="gender">Staying in Different Cities</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="p_stay" id="p_stay_sep" value="Seprated">
+                                <input class="form-check-input" type="radio" name="p_stay_radio" value="Seprated">
                                 <label class="form-check-label" for="gender">Seprated</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="p_stay" id="p_stay_oth" value="other">
+                                <input class="form-check-input" type="radio" name="p_stay_radio" value="other">
                                 <label class="form-check-label" for="gender">Others</label>
                             </div>
                             <input type="text" class="form-control mt-3" id="p_stay_other_value" placeholder="Please Specify where you stay">
@@ -195,7 +195,6 @@
                                         <th rowspan="2" class="text-center align-middle">Activity</th>
                                         <th rowspan="2" class="text-center align-middle">Hours</th>
                                         <th colspan=3 class="text-center align-middle">Per</th>
-
                                     </tr>
                                     <tr>
                                         <th class="text-center align-middle">Day</th>
@@ -208,130 +207,130 @@
                                         <td class="text-center align-middle">Yoga</td>
                                         <td class="text-center"><input type="number" class="form-control" id="yoga_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" id="yoga_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" id="yoga_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" id="yoga_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="yoga_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Outdoor Games</td>
                                         <td class="text-center"><input type="number" class="form-control" id="og_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" id="og_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" id="og_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" id="og_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="og_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Walking</td>
                                         <td class="text-center"><input type="number" class="form-control" id="walking_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" id="walking_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" id="walking_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" id="walking_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="walking_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Excerise</td>
                                         <td class="text-center"><input type="number" class="form-control" id="excerise_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" id="excerise_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" id="excerise_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" id="excerise_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="excerise_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Jogging</td>
                                         <td class="text-center"><input type="number" class="form-control" id="jogging_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" id="jogging_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" id="jogging_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" id="jogging_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="jogging_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Gym</td>
                                         <td class="text-center"><input type="number" class="form-control" id="gym_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" id="gym_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" id="gym_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" id="gym_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="gym_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Dancing</td>
                                         <td class="text-center"><input type="number" class="form-control" id="dancing_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" id="dancing_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" id="dancing_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" id="dancing_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="dancing_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Aerobics</td>
                                         <td class="text-center"><input type="number" class="form-control" id="aerobics_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" id="aerobics_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" id="aerobics_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" id="aerobics_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="aerobics_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">TV</td>
                                         <td class="text-center"><input type="number" class="form-control" id="tv_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" id="tv_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" id="tv_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" id="tv_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="tv_radio" value="m">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"><input type="text" class="form-control" id="others_name" placeholder="If Others Please specify"></td>
                                         <td class="text-center"><input type="number" class="form-control" id="others_hours" placeholder="#hours"></td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" id="others_radio_id" value="d">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" value="d">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" id="others_radio_id" value="w">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" value="w">
                                         </td>
                                         <td class="text-center">
-                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" id="others_radio_id" value="m">
+                                            <input class="mt-2 align-middle text-center" type="radio" name="others_radio" value="m">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -343,34 +342,34 @@
                                 <h6><b>Do you consume junk food/street food: </b></h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <input class="form-check-input" type="radio" name="junkfood_radio" id="junkfood" value="hostel">
                                 <label class="form-check-label" for="gender">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <input class="form-check-input" type="radio" name="junkfood_radio" id="junkfood" value="home">
                                 <label class="form-check-label" for="gender">No</label>
                             </div>
 
                             <div class="form-row mt-3">
                                 <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                <div class="col-md-8"><input type="number" class="form-control" id="inputZip" placeholder="Since how many years you eat junk/street food">
+                                <div class="col-md-8"><input type="number" class="form-control" id="junkfood_since_long" placeholder="Since how many years you eat junk/street food">
                                 </div>
                             </div>
                             <div class="form-row mt-3">
                                 <div class="col-md-3"><label class="align-middle">How many times?</label></div>
-                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="in a day/week/month">
+                                <div class="col-md-4"><input type="number" class="form-control" id="junkfood_how_many_times" placeholder="in a day/week/month">
                                 </div>
                                 <div class="col-md-5">
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                        <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="d">
                                         <label class="align-middle mr-2" for="gender">Daily</label>
                                     </div>
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                        <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="w">
                                         <label class="align-middle mr-2" for="gender">Weekly</label>
                                     </div>
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                        <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="m">
                                         <label class="align-middle" for="class">Monthly</label>
                                     </div>
                                 </div>
@@ -385,11 +384,11 @@
                                     <h6><b>Smoking</b></h6>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                    <input class="form-check-input" type="radio" name="smoking_radio" value="yes">
                                     <label class="form-check-label" for="gender">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                    <input class="form-check-input" type="radio" name="smoking_radio" value="no">
                                     <label class="form-check-label" for="gender">No</label>
                                 </div>
                                 <div class="form-row mt-3">
@@ -397,24 +396,24 @@
 
                                     <div class="col-md-8">
                                         <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="d">
                                             <label class="align-middle mr-2" for="gender">Daily</label>
                                         </div>
                                         <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="w">
                                             <label class="align-middle mr-2" for="gender">Weekly</label>
                                         </div>
                                         <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="m">
                                             <label class="align-middle" for="class">Monthly</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-row mt-3">
                                     <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Years">
+                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="Years">
                                     </div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Months">
+                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_months" placeholder="Months">
                                     </div>
                                 </div>
                             </div>
@@ -423,11 +422,11 @@
                                     <h6><b>Alcohol</b></h6>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                    <input class="form-check-input" type="radio" name="alcohol_radio" value="yes">
                                     <label class="form-check-label" for="gender">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                    <input class="form-check-input" type="radio" name="alcohol_radio" value="no">
                                     <label class="form-check-label" for="gender">No</label>
                                 </div>
                                 <div class="form-row mt-3">
@@ -435,24 +434,24 @@
 
                                     <div class="col-md-8">
                                         <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="d">
                                             <label class="align-middle mr-2" for="gender">Daily</label>
                                         </div>
                                         <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="w">
                                             <label class="align-middle mr-2" for="gender">Weekly</label>
                                         </div>
                                         <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="m">
                                             <label class="align-middle" for="class">Monthly</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-row mt-3">
                                     <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Years">
+                                    <div class="col-md-4"><input type="number" class="form-control" id="alcohol_since_years" placeholder="Years">
                                     </div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Months">
+                                    <div class="col-md-4"><input type="number" class="form-control" id="alcohol_since_months" placeholder="Months">
                                     </div>
                                 </div>
                             </div>
@@ -461,18 +460,18 @@
                                     <h6><b>Consumption of tobacco or any drugs?</b></h6>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                    <input class="form-check-input" type="radio" name="tobacco_radio" value="yes">
                                     <label class="form-check-label" for="gender">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                    <input class="form-check-input" type="radio" name="tobacco_radio" value="no">
                                     <label class="form-check-label" for="gender">No</label>
                                 </div>
                                 <div class="form-row mt-3">
                                     <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Years">
+                                    <div class="col-md-4"><input type="number" class="form-control" id="tobacco_since_years" placeholder="Years">
                                     </div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Months">
+                                    <div class="col-md-4"><input type="number" class="form-control" id="tobacco_since_months" placeholder="Months">
                                     </div>
                                 </div>
                             </div>
@@ -485,18 +484,18 @@
                                 <h6><b>Are you using social media? (Facebook, Whatsapp, Instagram, Pokemon Go etc.)</b></h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <input class="form-check-input" type="radio" name="use_sm_radio" value="yes">
                                 <label class="form-check-label" for="gender">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <input class="form-check-input" type="radio" name="use_sm_radio" value="no">
                                 <label class="form-check-label" for="gender">No</label>
                             </div>
                             <div class="form-row mt-3">
                                 <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Years">
+                                <div class="col-md-4"><input type="number" class="form-control" id="use_sm_since_years" placeholder="Years">
                                 </div>
-                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="Months">
+                                <div class="col-md-4"><input type="number" class="form-control" id="use_sm_since_months" placeholder="Months">
                                 </div>
                             </div>
                         </div>
@@ -570,32 +569,32 @@
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <h6>For what purpose you use social media?</h6>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your responce here">
+                            <input type="text" class="form-control" id="A_q9" placeholder="Enter your responce here">
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <h6>Most common social media accessed by you (From those answered in above table)</h6>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your comma seprated responce here">
+                            <input type="text" class="form-control" id="A_q10" placeholder="Enter your comma seprated responce here">
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <div class="form-check form-check-inline">
                                 <h6>Common gadget you use to access social media</h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="gender" value="hostel">
+                                <input class="form-check-input" type="radio" name="A_q11_radio" value="Computer">
                                 <label class="form-check-label" for="gender">Computer</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="gender" value="home">
+                                <input class="form-check-input" type="radio" name="A_q11_radio" value="Mobile">
                                 <label class="form-check-label" for="gender">Mobile</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="class" value="pg">
+                                <input class="form-check-input" type="radio" name="A_q11_radio" value="Tab">
                                 <label class="form-check-label" for="class">Tab/iPad</label>
                             </div>
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <h6>How much money do you spend for recharging data plan(Internet) per month(approx)</h6>
-                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                            <input type="number" class="form-control" id="A_q12" placeholder="Aprox amount in INR">
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <div class="form-check form-check-inline">
@@ -603,19 +602,19 @@
                             </div>
                             <div class="form-row mt-3">
                                 <div class="col-md-3"><label class="align-middle">Hours per day/week/month</label></div>
-                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="">
+                                <div class="col-md-4"><input type="number" class="form-control" id="A_q13" placeholder="">
                                 </div>
                                 <div class="col-md-5">
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                        <input class="align-middle mr-1" type="radio" name="A_q13_radio" value="d">
                                         <label class="align-middle mr-2" for="gender">Daily</label>
                                     </div>
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                        <input class="align-middle mr-1" type="radio" name="A_q13_radio" value="w">
                                         <label class="align-middle mr-2" for="gender">Weekly</label>
                                     </div>
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                        <input class="align-middle mr-1" type="radio" name="A_q13_radio" value="m">
                                         <label class="align-middle" for="class">Monthly</label>
                                     </div>
                                 </div>
@@ -993,76 +992,76 @@
                                 <tbody>
                                     <tr>
                                         <td class="align-middle">Do you stay on social media longer than you intended?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q1_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q1_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q1_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q1_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q1_radio" value="A" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you form relationship with fellow social media users.</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q2_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q2_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q2_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q2_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q2_radio" value="A" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Have your grades/academic work/household work suffered or have you neglected family /friends because of time you spend on social media?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q3_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q3_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q3_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q3_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q3_radio" value="A" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you check social media before something else you were supposed to do?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q4_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q4_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q4_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q4_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q4_radio" value="A" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you block out disturbing thoughts about your life with soothing thoughts of the social media?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q5_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q5_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q5_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q5_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q5_radio" value="A" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you find yourself anticipating/fantasize about when you will go on social media again?
                                         </td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q6_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q6_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q6_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q6_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q6_radio" value="A" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do others in your life complain to you about the amount of time you spend on social media?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q7_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q7_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q7_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q7_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q7_radio" value="A" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you yell,or act annoyed if someone bothers you when you are on social media</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q8_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q8_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q8_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q8_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q8_radio" value="A" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you try to cut down the amount of time you spend on social media & fail?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q9_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q9_radio" value="R" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q9_radio" value="OC" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q9_radio" value="O" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_q9_radio" value="A" type="radio"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1083,67 +1082,67 @@
                                 <tbody>
                                     <tr>
                                         <td class="align-middle">Depressed</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q1_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q1_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q1_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q1_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q1_radio" value="N" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Moody</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q2_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q2_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q2_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q2_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q2_radio" value="N" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Anxious</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q3_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q3_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q3_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q3_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q3_radio" value="N" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Irritable</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q4_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q4_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q4_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q4_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q4_radio" value="N" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Anger</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q5_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q5_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q5_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q5_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q5_radio" value="N" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Relief</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q6_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q6_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q6_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q6_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q6_radio" value="N" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Lonely</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q7_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q7_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q7_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q7_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q7_radio" value="N" type="radio"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Fustration</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q8_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q8_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q8_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q8_radio" value="N" type="radio"></td>
+                                        <td class="align-middle text-center border"><input name="sm_offline_feel_q8_radio" value="N" type="radio"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1152,22 +1151,22 @@
                     <div class="tab">
                         <div class="border rounded p-3 align-middle mt-3">
                             <h6>What are the games you play on social media(on internet):</h6>
-                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                            <input type="text" class="form-control" id="games_you_play_text_id" placeholder="Enter comma seprated values">
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <div class="form-check form-check-inline">
                                 <h6>Each time when you go for gaming on social media, how long you spend?</h6>
                             </div>
                             <div class="form-row mt-3">
-                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="">
+                                <div class="col-md-4"><input type="number" class="form-control" id="hours_in_game_number_id" placeholder="Enter number of hours">
                                 </div>
                                 <div class="col-md-5">
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                        <input class="align-middle mr-1" type="radio" name="hours_in_game_radio" value="hours">
                                         <label class="align-middle mr-2" for="gender">Hours</label>
                                     </div>
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                        <input class="align-middle mr-1" type="radio" name="hours_in_game_radio" value="minutes">
                                         <label class="align-middle mr-2" for="gender">Minutes</label>
                                     </div>
                                 </div>
@@ -1179,19 +1178,19 @@
                             </div>
                             <div class="form-row mt-3">
                                 <div class="col-md-3"><label class="align-middle">Per Day/Week/Month</label></div>
-                                <div class="col-md-4"><input type="number" class="form-control" id="inputZip" placeholder="">
+                                <div class="col-md-4"><input type="number" class="form-control" id="frequency_of_game_number_id" placeholder="No of times a day/week/month">
                                 </div>
                                 <div class="col-md-5">
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="hostel">
+                                        <input class="align-middle mr-1" type="radio" name="frequency_of_game_radio" value="d">
                                         <label class="align-middle mr-2" for="gender">Daily</label>
                                     </div>
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="gender" value="home">
+                                        <input class="align-middle mr-1" type="radio" name="frequency_of_game_radio" value="w">
                                         <label class="align-middle mr-2" for="gender">Weekly</label>
                                     </div>
                                     <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="stay" id="class" value="pg">
+                                        <input class="align-middle mr-1" type="radio" name="frequency_of_game_radio" value="m">
                                         <label class="align-middle" for="class">Monthly</label>
                                     </div>
                                 </div>
@@ -1200,7 +1199,7 @@
                         <div class="border rounded p-3 align-middle mt-3">
                             <div class="form-check form-check-inline">
                                 <h6>How much money you spend on internet gaming per month?</h6>
-                                <input type="number" class="form-control" id="inputZip" placeholder="">
+                                <input type="number" class="form-control" id="money_on_gaming_number_id" placeholder="Enter aprox amount in INR">
                             </div>
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
@@ -1243,54 +1242,54 @@
                                 <tbody>
                                     <tr>
                                         <td class="align-middle">When you are not gaming, do you think about playing a game or think about how would it feel to play at that moment?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q1_radio" value="N"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q1_radio" value="R"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q1_radio" value="OC"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q1_radio" value="O"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q1_radio" value="A"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you play longer than originally planned?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q2_radio" value="N"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q2_radio" value="R"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q2_radio" value="OC"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q2_radio" value="O"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q2_radio" value="A"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you feel depressed or irritable when not gaming and do you start playing again only for these feelings to disappear?
                                         </td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q3_radio" value="N"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q3_radio" value="R"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q3_radio" value="OC"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q3_radio" value="O"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q3_radio" value="A"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you fail to meet up with a friend /social gatherings because you were gaming?
                                         </td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q4_radio" value="N"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q4_radio" value="R"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q4_radio" value="OC"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q4_radio" value="O"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q4_radio" value="A"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you argue with your parents and/or your partner because of gaming or neglect other activities because of gaming?</td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q5_radio" value="N"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q5_radio" value="R"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q5_radio" value="OC"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q5_radio" value="O"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q5_radio" value="A"></td>
                                     </tr>
                                     <tr>
                                         <td class="align-middle">Do you try to cut down the amount of time you spend on gaming and fail?
                                         </td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
-                                        <td class="align-middle text-center border"><input type="radio"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q6_radio" value="N"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q6_radio" value="R"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q6_radio" value="OC"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q6_radio" value="O"></td>
+                                        <td class="align-middle text-center border"><input type="radio" id="gaming_q6_radio" value="A"></td>
                                 </tbody>
                             </table>
                         </div>
