@@ -27,8 +27,15 @@
                     <div class="tab">
                         <div class="border rounded p-3 align-middle mt-3">
                             <div class="form-group">
-                                <label>What is your name?</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                <label class="mr-3">Collage Name</label>
+                                <select class="form-select form-select-lg mb-3" aria-label="Default select example">
+                                    <option selected hidden>Select Collage</option>
+                                    <option value="Shri M. P. Shah Government Medical College, Jamnagar">Shri M. P. Shah Government Medical College, Jamnagar</option>
+                                    <option value="Government Dental College and Hospital, Jamnagar">Government Dental College and Hospital, Jamnagar</option>
+                                    <option value="Shri Gulab kunverba Ayurveda Mahavidyalaya,Jamnagar">Shri Gulab kunverba Ayurveda Mahavidyalaya, Jamnagar</option>
+                                    <option value="Government Physiotherapy College, Jamnagar">Government Physiotherapy College, Jamnagar</option>
+                                    
+                                </select>
                             </div>
                             <div class="form-group">
                                 <div class="form-row">
@@ -54,15 +61,15 @@
                                     </div>
                                     <div class="col-md-5">
                                         <div class="form-check form-check-inline">
-                                            <label class="form-check-label" for="class"><b>Class</b></label>
+                                            <label class="form-check-label" for="class"><b>Course</b></label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="class" id="class1" value="1">
-                                            <label class="form-check-label" for="class">1st PUC</label>
+                                            <input class="form-check-input" type="radio" name="course" id="class1" value="ug">
+                                            <label class="form-check-label" for="class">UG</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="class" id="class2" value="2">
-                                            <label class="form-check-label" for="class">2nd PUC</label>
+                                            <input class="form-check-input" type="radio" name="course" id="class2" value="pg">
+                                            <label class="form-check-label" for="class">PG</label>
                                         </div>
                                     </div>
 
@@ -70,28 +77,16 @@
                             </div>
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
-                            <div class="form-group">
-                                <label for="inputAddress">Address line 1</label>
-                                <input type="text" class="form-control" id="add1" placeholder="1234 Main St">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="class"><b>Residence</b></label>
                             </div>
-                            <div class="form-group">
-                                <label for="inputAddress2">Address line 2</label>
-                                <input type="text" class="form-control" id="add2" placeholder="Apartment, studio, or floor">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="residence" value="rural">
+                                <label class="form-check-label" for="class">Rural</label>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="city" placeholder="Enter your city">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputState">State</label>
-                                    <input type="text" class="form-control" id="state" placeholder="Enter your state">
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputZip">Pincode</label>
-                                    <input type="number" class="form-control" id="pincode" placeholder="Pincode">
-                                </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="residence" value="urban">
+                                <label class="form-check-label" for="class">Urban</label>
                             </div>
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
@@ -159,9 +154,8 @@
                         </div>
 
                         <div class="border rounded p-3 align-middle mt-3">
-                            <h5>Parents are: </h5>
                             <div class="form-check form-check-inline">
-                                <h6><b>Working: </b></h6>
+                                <h6><b>Parents are working: </b></h6>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="p_working_radio" value="2">
@@ -172,20 +166,6 @@
                                 <label class="form-check-label" for="gender">One</label>
                             </div>
 
-                            <br>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="p_stay_radio" value="different cities">
-                                <label class="form-check-label" for="gender">Staying in Different Cities</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="p_stay_radio" value="Seprated">
-                                <label class="form-check-label" for="gender">Seprated</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="p_stay_radio" value="other">
-                                <label class="form-check-label" for="gender">Others</label>
-                            </div>
-                            <input type="text" class="form-control mt-3" id="p_stay_other_value" placeholder="Please Specify where you stay">
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <h5>Are you doing any of following activities (Leave blank if not applicable)</h5>
@@ -410,10 +390,19 @@
                                     </div>
                                 </div>
                                 <div class="form-row mt-3">
-                                    <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="Years">
+                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
                                     </div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_months" placeholder="Months">
+                                    <div class="col-md-6">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                            <label class="align-middle mr-2" for="gender">Years</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                            <label class="align-middle mr-2" for="gender">Months</label>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -448,10 +437,19 @@
                                     </div>
                                 </div>
                                 <div class="form-row mt-3">
-                                    <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="alcohol_since_years" placeholder="Years">
+                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
                                     </div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="alcohol_since_months" placeholder="Months">
+                                    <div class="col-md-6">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                            <label class="align-middle mr-2" for="gender">Years</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                            <label class="align-middle mr-2" for="gender">Months</label>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -468,10 +466,19 @@
                                     <label class="form-check-label" for="gender">No</label>
                                 </div>
                                 <div class="form-row mt-3">
-                                    <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="tobacco_since_years" placeholder="Years">
+                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
                                     </div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="tobacco_since_months" placeholder="Months">
+                                    <div class="col-md-6">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                            <label class="align-middle mr-2" for="gender">Years</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                            <label class="align-middle mr-2" for="gender">Months</label>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -492,10 +499,20 @@
                                 <label class="form-check-label" for="gender">No</label>
                             </div>
                             <div class="form-row mt-3">
-                                <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                <div class="col-md-4"><input type="number" class="form-control" id="use_sm_since_years" placeholder="Years">
+                                <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
+                                <div class="col-md-4">
+                                    <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
                                 </div>
-                                <div class="col-md-4"><input type="number" class="form-control" id="use_sm_since_months" placeholder="Months">
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                        <label class="align-middle mr-2" for="gender">Years</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                        <label class="align-middle mr-2" for="gender">Months</label>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -511,58 +528,146 @@
                                         <th colspan="2" class="text-center align-middle ml-5">How Long</th>
                                     </tr>
                                     <tr>
-                                        <th class="text-center align-middle ml-5">Years</th>
-                                        <th class="text-center align-middle">Months</th>
+                                        <th class="text-center align-middle ml-5">Months/Years</th>
+                                        <th class="text-center align-middle"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="text-center align-middle">Facebook</td>
                                         <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle">
+                                            <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                                <label class="align-middle mr-2" for="gender">Years</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                                <label class="align-middle mr-2" for="gender">Months</label>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Whatsapp</td>
                                         <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle">
+                                            <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                                <label class="align-middle mr-2" for="gender">Years</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                                <label class="align-middle mr-2" for="gender">Months</label>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Internet Gaming</td>
                                         <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle">
+                                            <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                                <label class="align-middle mr-2" for="gender">Years</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                                <label class="align-middle mr-2" for="gender">Months</label>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">YouTube</td>
                                         <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle">
+                                            <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                                <label class="align-middle mr-2" for="gender">Years</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                                <label class="align-middle mr-2" for="gender">Months</label>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Twitter</td>
                                         <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle">
+                                            <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                                <label class="align-middle mr-2" for="gender">Years</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                                <label class="align-middle mr-2" for="gender">Months</label>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">Instagram</td>
                                         <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle">
+                                            <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                                <label class="align-middle mr-2" for="gender">Years</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                                <label class="align-middle mr-2" for="gender">Months</label>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle">TikTok/MX Takatak etc.</td>
                                         <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle">
+                                            <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                                <label class="align-middle mr-2" for="gender">Years</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                                <label class="align-middle mr-2" for="gender">Months</label>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center align-middle"><input type="text" placeholder="If Others Please Specify" class="form-control"></td>
                                         <td class="text-center align-middle mx-5"><input class="form-control" type="checkbox" name="fb" value="fb"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
-                                        <td class="text-center align-middle"><input type="number" class="form-control"></td>
+                                        <td class="text-center align-middle">
+                                            <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                                <label class="align-middle mr-2" for="gender">Years</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                                <label class="align-middle mr-2" for="gender">Months</label>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
