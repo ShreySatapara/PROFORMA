@@ -22,6 +22,14 @@ h1 {
     display: none
 }
 
+input.invalid {
+    border-color: #f50707;
+}
+
+.invalid_class {
+    border: 1px solid red;
+}
+
 button {
     background-color: #6A1B9A;
     color: #ffffff;
