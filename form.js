@@ -78,6 +78,7 @@ function validateForm() {
     } else {
         document.getElementById("fill_warning").removeAttribute("hidden");
     }
+    valid = true;
     return valid;
 }
 

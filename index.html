@@ -26,6 +26,29 @@
                     </div>
                     <div class="tab">
                         <div class="border rounded p-3 align-middle mt-3">
+                            <h3 class="text-center text-info">A STUDY ON SOCIAL MEDIA USAGE AND HEALTH STATUS AMONG STUDENTS STUDYING IN MEDICAL AND PARA-MEDICAL COLLEGES OF URBAN JAMNAGAR</h3>
+                            <br><br>
+                            <p class="text-justify">&emsp; I AM DOING MY DISSERTATION ON THE ABOVE MENTIONED TOPIC FOR THAT I NEED TO COLLECT SOME INFORMATION ON SOCIAL MEDIA USAGE, ONLINE GAMING, IT’S EFFECT ON PHYSICAL/MENTAL HEALTH AND ADDICTION DETAILS OF THE UNDERGRADUATE
+                                MEDICAL AND PARA MEDICAL STUDENTS IN JAMNAGAR URBAN AREA. YOUR IDENTITY WONT BE ASKED OR DISCLOSED AT ANY POINT OF TIME. THE DATA COLLECTED WILL BE STORED AND ANALYSED AS ANONYMOUS AND WILL BE KEPT CONFIDENTIAL TOTALLY,
+                                ONLY PRINCIPAL INVESTIGATOR AND CO PRINCIPAL INVESTIGATOR WILL HAVE THE ACCESS TO THE INFORMATION COLLECTED. YOU CAN WITHDRAW FROM THE STUDY AT ANY POINT OF TIME WITHOUT YOUR LEGAL AND MEDICAL RIGHTS BEING AFFECTED. IF
+                                YOU HAVE ANY QUERY REGARDING THIS FORM OR STUDY YOU CAN CONTACT PRINCIPAL INVESTIGATOR.</p>
+                            <h4>Contact Details</h4>
+                            <h5>Dr. Niketkumar Satapara</h5>
+                            <h6>RESIDENT DOCTOR - PREVENTIVE AND SOCIAL MEDICINE</h6>
+                            <h5>Contact No. 7878407797</h5>
+                            <h5>Email ID:<a href="mailto:niketsatapara@gmail.com">niketsatapara@gmail.com</a></h5>
+                            <br><br>
+                            <div class="text-danger">* required</div>
+                            <label>
+                                DO YOU WISH TO GIVE THE INFORMED CONSENT FOR THE QUESTIONNARE TO BE FILLED? YOUR IDENTIFICATION DETAILS WONT BE ASKED AND ALL INFORMATION WILL BE KEPT CONFIDENTIAL. 
+                                <label class="text-danger">*</label></label>
+                            <label>YES</label><input class="ml-2" type="radio" name="concent" id="concent_radio_id_y" value="yes">
+                            <br><label>NO</label><input class="ml-3" type="radio" name="concent" id="concent_radio_id_y" value="no">
+
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="border rounded p-3 align-middle mt-3">
                             <div class="form-group">
                                 <label class="mr-3">Collage Name</label>
                                 <select class="form-select form-select-lg mb-3" aria-label="Default select example" id="clg_name">
@@ -1451,6 +1474,38 @@
             console.log("imin")
         }
     })
+
+
+    function concentAlert() {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Confirm!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                var x = document.getElementsByClassName("tab");
+                x[0].style.display = "none";
+                document.getElementById("nextprevious").style.display = "none";
+                document.getElementById("all-steps").style.display = "none";
+                document.getElementById("register").style.display = "none";
+                document.getElementById("text-message").style.display = "block";
+
+            }
+        })
+    }
+    $("input[name='concent']").on('click', function(e) {
+        if (e.target.value == "no") {
+            concentAlert();
+            document.getElementById("nextBtn").disabled = true;
+        } else {
+            document.getElementById("nextBtn").disabled = false;
+        }
+    })
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </html>
