@@ -34,9 +34,6 @@ function nextPrev(n) {
         document.getElementById("register").style.display = "none";
         document.getElementById("text-message").style.display = "block";
 
-
-
-
     }
     showTab(currentTab);
 }
@@ -67,10 +64,11 @@ function validateForm() {
         }
     }
 
-    var clg_name_select = document.getElementById("clg_name");
+    /*var clg_name_select = document.getElementById("clg_name");
     if (clg_name_select.value == "") {
         clg_name_select.classList.add("border-danger");
-    }
+    }*/
+    valid = true;
 
     if (valid) {
         document.getElementsByClassName("step")[currentTab].className += " finish";
@@ -78,7 +76,7 @@ function validateForm() {
     } else {
         document.getElementById("fill_warning").removeAttribute("hidden");
     }
-    valid = true;
+
     return valid;
 }
 

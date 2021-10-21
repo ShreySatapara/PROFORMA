@@ -23,6 +23,7 @@
                         <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
                         <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
                         <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
+                        <span class="step"><i class="fa fa-check" aria-hidden="true"></i></span>
                     </div>
                     <div class="tab">
                         <div class="border rounded p-3 align-middle mt-3">
@@ -342,49 +343,24 @@
                             </table>
 
                         </div>
-                        <div class="border rounded p-3 align-middle mt-3">
+                        <div class="border rounded p-3 align-middle mt-3" id="junkfood_div">
                             <div class="form-check form-check-inline">
                                 <h6><b>Do you consume junk food/street food: </b></h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="junkfood_radio" id="junkfood" value="hostel">
-                                <label class="form-check-label" for="gender">Yes</label>
+                                <input class="form-check-input" type="radio" name="junkfood_radio" id="junkfood" value="yes">
+                                <label class="form-check-label" for="junkfood">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="junkfood_radio" id="junkfood" value="home">
-                                <label class="form-check-label" for="gender">No</label>
-                            </div>
-
-                            <div class="form-row mt-3">
-                                <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
-                                <div class="col-md-8"><input type="number" class="form-control" id="junkfood_since_long" placeholder="Since how many years you eat junk/street food">
-                                </div>
-                            </div>
-                            <div class="form-row mt-3">
-                                <div class="col-md-3"><label class="align-middle">How many times?</label></div>
-                                <div class="col-md-4"><input type="number" class="form-control" id="junkfood_how_many_times" placeholder="in a day/week/month">
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="d">
-                                        <label class="align-middle mr-2" for="gender">Daily</label>
-                                    </div>
-                                    <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="w">
-                                        <label class="align-middle mr-2" for="gender">Weekly</label>
-                                    </div>
-                                    <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="m">
-                                        <label class="align-middle" for="class">Monthly</label>
-                                    </div>
-                                </div>
+                                <input class="form-check-input" type="radio" name="junkfood_radio" id="junkfood" value="no">
+                                <label class="form-check-label" for="junkfood">No</label>
                             </div>
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
                             <div>
                                 <h5><b>Do you have habbit of </b></h5>
                             </div>
-                            <div class="border rounded p-3 align-middle mt-3">
+                            <div class="border rounded p-3 align-middle mt-3" id="smoking_div">
                                 <div class="form-check form-check-inline">
                                     <h6><b>Smoking</b></h6>
                                 </div>
@@ -396,42 +372,9 @@
                                     <input class="form-check-input" type="radio" name="smoking_radio" value="no">
                                     <label class="form-check-label" for="gender">No</label>
                                 </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-md-4"><label class="align-middle">How frequently?</label></div>
 
-                                    <div class="col-md-8">
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="d">
-                                            <label class="align-middle mr-2" for="gender">Daily</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="w">
-                                            <label class="align-middle mr-2" for="gender">Weekly</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="m">
-                                            <label class="align-middle" for="class">Monthly</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
-                                            <label class="align-middle mr-2" for="gender">Years</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
-                                            <label class="align-middle mr-2" for="gender">Months</label>
-                                        </div>
-
-                                    </div>
-                                </div>
                             </div>
-                            <div class="border rounded p-3 align-middle mt-3">
+                            <div class="border rounded p-3 align-middle mt-3" id="alcohol_div">
                                 <div class="form-check form-check-inline">
                                     <h6><b>Alcohol</b></h6>
                                 </div>
@@ -443,42 +386,9 @@
                                     <input class="form-check-input" type="radio" name="alcohol_radio" value="no">
                                     <label class="form-check-label" for="gender">No</label>
                                 </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-md-4"><label class="align-middle">How frequently?</label></div>
 
-                                    <div class="col-md-8">
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="d">
-                                            <label class="align-middle mr-2" for="gender">Daily</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="w">
-                                            <label class="align-middle mr-2" for="gender">Weekly</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="m">
-                                            <label class="align-middle" for="class">Monthly</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
-                                            <label class="align-middle mr-2" for="gender">Years</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
-                                            <label class="align-middle mr-2" for="gender">Months</label>
-                                        </div>
-
-                                    </div>
-                                </div>
                             </div>
-                            <div class="border rounded p-3 align-middle mt-3">
+                            <div class="border rounded p-3 align-middle mt-3" id="tobacco_div">
                                 <div class="form-check form-check-inline">
                                     <h6><b>Consumption of tobacco or any drugs?</b></h6>
                                 </div>
@@ -490,28 +400,13 @@
                                     <input class="form-check-input" type="radio" name="tobacco_radio" value="no">
                                     <label class="form-check-label" for="gender">No</label>
                                 </div>
-                                <div class="form-row mt-3">
-                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
-                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
-                                            <label class="align-middle mr-2" for="gender">Years</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
-                                            <label class="align-middle mr-2" for="gender">Months</label>
-                                        </div>
 
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="tab">
-                        <div class="border rounded p-3 align-middle mt-3">
+                        <div class="border rounded p-3 align-middle mt-3" id="use_sm_div">
                             <div class="form-check form-check-inline">
                                 <h6><b>Are you using social media? (Facebook, Whatsapp, Instagram, Pokemon Go etc.)</b></h6>
                             </div>
@@ -522,23 +417,6 @@
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="use_sm_radio" value="no">
                                 <label class="form-check-label" for="gender">No</label>
-                            </div>
-                            <div class="form-row mt-3">
-                                <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
-                                <div class="col-md-4">
-                                    <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
-                                        <label class="align-middle mr-2" for="gender">Years</label>
-                                    </div>
-                                    <div class="form-check-inline">
-                                        <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
-                                        <label class="align-middle mr-2" for="gender">Months</label>
-                                    </div>
-
-                                </div>
                             </div>
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
@@ -750,75 +628,52 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border rounded p-3 align-middle mt-3">
-                            <h6><b>Whrere do you use social media?</b></h6>
+                        <div class="border rounded p-3 align-middle mt-3" id="where_you_use_sm_div">
+                            <h6><b>Where do you use social media?</b></h6>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="stay" id="gender" value="hostel">
+                                <input class="form-check-input" type="checkbox" name="where_you_use_sm_radio" id="where_you_use_sm_Residence" value="Residence">
                                 <label class="form-check-label" for="gender">Residence</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="stay" id="gender" value="home">
+                                <input class="form-check-input" type="checkbox" name="where_you_use_sm_radio" id="where_you_use_sm_College" value="College">
                                 <label class="form-check-label" for="gender">College</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="stay" id="class" value="pg">
+                                <input class="form-check-input" type="checkbox" name="where_you_use_sm_radio" id="where_you_use_sm_Cyber Cafe" value="Cyber Cafe">
                                 <label class="form-check-label" for="class">Cyber Cafe</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="stay" id="class" value="others">
+                                <input class="form-check-input" type="checkbox" name="where_you_use_sm_radio" id="where_you_use_sm_Driving" value="Driving">
                                 <label class="form-check-label" for="class">Driving</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="stay" id="class" value="others">
+                                <input class="form-check-input" type="checkbox" name="where_you_use_sm_radio" id="where_you_use_sm_Walking" value="Walking">
                                 <label class="form-check-label" for="class">Walking</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="stay" id="class" value="others">
-                                <label class="form-check-label" for="class">others</label>
+                                <input class="form-check-input" type="checkbox" name="where_you_use_sm_radio" id="where_you_use_sm_others" value="others">
+                                <label class="form-check-label" for="class">Others</label>
                             </div>
-                            <input type="text" class="form-control mt-3" id="inputZip" placeholder="If Others Please Specify">
-                            <div class="border rounded p-3 align-middle mt-3">
-                                <h6>If you used while walking/driving have you met with an accident/bumped/tripped</h6>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="gender" value="hostel">
-                                    <label class="form-check-label" for="gender">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="gender" value="home">
-                                    <label class="form-check-label" for="gender">No</label>
-                                </div>
-                                <div class="border rounded p-3 align-middle mt-3">
-                                    <h6>Even after that event, have you continued to use social media while driving/walking</h6>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="stay" id="gender" value="hostel">
-                                        <label class="form-check-label" for="gender">Yes</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="stay" id="gender" value="home">
-                                        <label class="form-check-label" for="gender">No</label>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
-                        <div class="border rounded p-3 align-middle mt-3">
+                        <div class="border rounded p-3 align-middle mt-3" id="what_you_first_check_sm_div">
                             <div class="form-row">
                                 <div class="col-md-7">
                                     <h6>When you open a computer/mobile/tab, what do you first check?</h6>
                                 </div>
                                 <div class="col-md-5">
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" id="what_you_first_check_sm">
                                         <option selected hidden>Select Social Media</option>
-                                        <option value="1">Facebook</option>
-                                        <option value="2">Whatsapp</option>
-                                        <option value="3">Instagram</option>
-                                        <option value="3">Twitter</option>
-                                        <option value="3">YouTube</option>
-                                        <option value="3">TikTok/MX Taktak etc</option>
-                                        <option value="3">Others</option>
+                                        <option value="Facebook">Facebook</option>
+                                        <option value="Whatsapp">Whatsapp</option>
+                                        <option value="Instagram">Instagram</option>
+                                        <option value="Twitter">Twitter</option>
+                                        <option value="YouTube">YouTube</option>
+                                        <option value="TikTok/MX Taktak etc">TikTok/MX Taktak etc</option>
+                                        <option value="others">Others</option>
                                       </select>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="If Others Please Specify">
                         </div>
                         <div class="border rounded p-3 align-middle mt-3">
 
@@ -1016,30 +871,17 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="border rounded p-3 align-middle mt-3">
+                        <div class="border rounded p-3 align-middle mt-3" id="take_photo_not_post_on_sm_div">
                             <div class="form-check form-check-inline">
                                 <h6>Do you take photos of one’s self at least three times a day but not posting them on social media?</h6>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                <input class="form-check-input" type="radio" name="take_photo_not_post_on_sm_radio" value="yes">
                                 <label class="form-check-label" for="gender">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                <input class="form-check-input" type="radio" name="take_photo_not_post_on_sm_radio" value="no">
                                 <label class="form-check-label" for="gender">No</label>
-                            </div>
-                            <div class="border rounded p-3 align-middle mt-3">
-                                <div class="form-check form-check-inline">
-                                    <h6>Do you take photos of one’s self at least three times a day and post each of the photos: </h6>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
-                                    <label class="form-check-label" for="gender">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
-                                    <label class="form-check-label" for="gender">No</label>
-                                </div>
                             </div>
                         </div>
 
@@ -1430,7 +1272,7 @@
                         <h3>Thank you for answering</h3><span>I really appreciate your efforts </span><br><br><br>
                         <span>Dr. Niket Satapara</span>
                     </div>
-                    <!--<div class="text-danger" id="fill_warning" hidden>Please fill all details</div>-->
+                    <div class="text-danger" id="fill_warning" hidden>Please fill all details</div>
                     <div style="overflow:auto;" class="mt-3" id="nextprevious">
                         <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-angle-double-left"></i></button> <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-double-right"></i></button> </div>
                     </div>
@@ -1471,7 +1313,6 @@
             }
         } else {
             $("#stay_other_value").remove();
-            console.log("imin")
         }
     })
 
@@ -1503,6 +1344,270 @@
             document.getElementById("nextBtn").disabled = true;
         } else {
             document.getElementById("nextBtn").disabled = false;
+        }
+    })
+
+    //junkfood
+    $("input[name='junkfood_radio']").on('click', function(e) {
+        console.log(e.target.value);
+        if (e.target.value == "yes") {
+            if ($("#junkfood_div").find('#junkfood_how_long').length == 0) {
+                $("#junkfood_div").append(`<div class="form-row mt-3" id="junkfood_how_long">
+            <div class="col-md-4"><label class="align-middle">Since how long?</label></div>
+            <div class="col-md-8"><input type="number" class="form-control" id="junkfood_since_long" placeholder="Since how many years you eat junk/street food">
+            </div>
+        </div><div class="form-row mt-3" id="junkfood_many_times">
+        <div class="col-md-3"><label class="align-middle">How many times?</label></div>
+        <div class="col-md-4"><input type="number" class="form-control" id="junkfood_how_many_times" placeholder="in a day/week/month">
+        </div>
+        <div class="col-md-5">
+            <div class="form-check-inline">
+                <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="d">
+                <label class="align-middle mr-2" for="gender">Daily</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="w">
+                <label class="align-middle mr-2" for="gender">Weekly</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="align-middle mr-1" type="radio" name="junkfood_radio" value="m">
+                <label class="align-middle" for="class">Monthly</label>
+            </div>
+        </div>
+    </div>`);
+            }
+        } else {
+            $("#junkfood_how_long").remove();
+            $("#junkfood_many_times").remove();
+        }
+    })
+
+    //HABBITS
+    //Smoking
+    $("input[name='smoking_radio']").on('click', function(e) {
+        if (e.target.value == "yes") {
+            if ($("#smoking_div").find('#smoking_how_frequently').length == 0) {
+                $("#smoking_div").append(`<div class="form-row mt-3" id="smoking_how_frequently">
+                                    <div class="col-md-4"><label class="align-middle">How frequently?</label></div>
+
+                                    <div class="col-md-8">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="d">
+                                            <label class="align-middle mr-2" for="gender">Daily</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="w">
+                                            <label class="align-middle mr-2" for="gender">Weekly</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_frequently_radio" value="m">
+                                            <label class="align-middle" for="class">Monthly</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row mt-3" id="smoking_since_long">
+                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                            <label class="align-middle mr-2" for="gender">Years</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                            <label class="align-middle mr-2" for="gender">Months</label>
+                                        </div>
+
+                                    </div>
+                                </div>`);
+            }
+        } else {
+            $("#smoking_how_frequently").remove();
+            $("#smoking_since_long").remove();
+        }
+    })
+
+    //ALCOHOL
+    $("input[name='alcohol_radio']").on('click', function(e) {
+        if (e.target.value == "yes") {
+            if ($("#alcohol_div").find('#alcohol_how_frequently').length == 0) {
+                $("#alcohol_div").append(`<div class="form-row mt-3" id="alcohol_how_frequently">
+                                    <div class="col-md-4"><label class="align-middle">How frequently?</label></div>
+
+                                    <div class="col-md-8">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="d">
+                                            <label class="align-middle mr-2" for="gender">Daily</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="w">
+                                            <label class="align-middle mr-2" for="gender">Weekly</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="alcohol_frequently_radio" value="m">
+                                            <label class="align-middle" for="class">Monthly</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row mt-3" id="alcohol_since_long">
+                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                            <label class="align-middle mr-2" for="gender">Years</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                            <label class="align-middle mr-2" for="gender">Months</label>
+                                        </div>
+
+                                    </div>
+                                `);
+            }
+        } else {
+            $("#alcohol_how_frequently").remove();
+            $("#alcohol_since_long").remove();
+        }
+    })
+
+    //TOBACCO
+    $("input[name='tobacco_radio']").on('click', function(e) {
+        if (e.target.value == "yes") {
+            if ($("#tobacco_div").find('#tobacco_since_long').length == 0) {
+                $("#tobacco_div").append(`<div class="form-row mt-3" id="tobacco_since_long">
+                                    <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                            <label class="align-middle mr-2" for="gender">Years</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                            <label class="align-middle mr-2" for="gender">Months</label>
+                                        </div>
+
+                                    </div>
+                                </div>`);
+            }
+        } else {
+            $("#tobacco_since_long").remove();
+        }
+    })
+
+    //do you use social media
+    $("input[name='use_sm_radio']").on('click', function(e) {
+        if (e.target.value == "yes") {
+            if ($("#use_sm_div").find('#tobacco_since_long').length == 0) {
+                $("#use_sm_div").append(`<div class="form-row mt-3" id="use_sm_since_long">
+                                <div class="col-md-2"><label class="align-middle">Since how long?</label></div>
+                                <div class="col-md-4">
+                                    <input type="number" class="form-control" id="smoking_since_years" placeholder="No of Months/Years">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="y">
+                                        <label class="align-middle mr-2" for="gender">Years</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="align-middle mr-1" type="radio" name="smoking_since_radio" value="m">
+                                        <label class="align-middle mr-2" for="gender">Months</label>
+                                    </div>
+                                </div>
+                            </div>`);
+            }
+        } else {
+            $("#use_sm_since_long").remove();
+        }
+    })
+
+    //where do you use internet
+    //Others
+    $("#where_you_use_sm_others").on('click', function(e) {
+            if (e.target.checked) {
+                if ($("#where_you_use_sm_div").find('#use_sm_other_value').length == 0) {
+                    $("#where_you_use_sm_div").append(`<input type="text" id="use_sm_other_value" class="form-control mt-3" id="inputZip" placeholder="If Others Please Specify">`);
+                }
+            } else {
+                $("#use_sm_other_value").remove();
+            }
+        })
+        //Use while walking/driving accident
+    $("input[name='where_you_use_sm_radio']").on('click', function(e) {
+            if ($("#where_you_use_sm_Walking").is(":checked") || $("#where_you_use_sm_Driving").is(":checked")) {
+                if ($("#where_you_use_sm_div").find('#use_sm_while_walk_drive').length == 0) {
+                    $("#where_you_use_sm_div").append(`<div class="border rounded p-3 align-middle mt-3" id="use_sm_while_walk_drive">
+                                <h6>If you used while walking/driving have you met with an accident/bumped/tripped</h6>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="use_sm_while_walk_drive_radio" value="yes">
+                                    <label class="form-check-label" for="gender">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="use_sm_while_walk_drive_radio" value="no">
+                                    <label class="form-check-label" for="gender">No</label>
+                                </div>
+                                <div class="border rounded p-3 align-middle mt-3" id="use_sm_after_accident">
+                                    <h6>Even after that event, have you continued to use social media while driving/walking</h6>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="use_sm_after_accident_radio" value="hostel">
+                                        <label class="form-check-label" for="gender">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="use_sm_after_accident_radio" value="home">
+                                        <label class="form-check-label" for="gender">No</label>
+                                    </div>
+                                </div>
+                            </div>`);
+                }
+            } else {
+                $("#use_sm_while_walk_drive").remove();
+            }
+        })
+        //continue use after that??
+        //
+        //
+        //
+        //REMINING
+        //
+        //
+        //
+        //
+
+    //which social media you first check
+    $("#what_you_first_check_sm").on('change', function(e) {
+        if ($('#what_you_first_check_sm').find(":selected").text() == "Others") {
+            if ($("#what_you_first_check_sm_div").find('#what_you_first_check_sm_other_value').length == 0) {
+                $("#what_you_first_check_sm_div").append(`<input type="text" id="what_you_first_check_sm_other_value" class="form-control mt-3" id="inputZip" placeholder="If Others Please Specify">`);
+            }
+        } else {
+            $("#what_you_first_check_sm_other_value").remove();
+        }
+    })
+
+    //take photo not post on sm
+    $("input[name='take_photo_not_post_on_sm_radio']").on('change', function(e) {
+        if (e.target.value == 'no') {
+            if ($("#take_photo_not_post_on_sm_div").find('#take_photo_not_post_on_sm_div').length == 0) {
+                $("#take_photo_not_post_on_sm_div").append(`<div class="border rounded p-3 align-middle mt-3" id="take_photo_post_all_on_sm">
+                                <div class="form-check form-check-inline">
+                                    <h6>Do you take photos of one’s self at least three times a day and post each of the photos: </h6>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="hostel">
+                                    <label class="form-check-label" for="gender">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="stay" id="junkfood" value="home">
+                                    <label class="form-check-label" for="gender">No</label>
+                                </div>
+                            </div>`);
+            }
+        } else {
+            $("#take_photo_post_all_on_sm").remove();
         }
     })
 </script>
