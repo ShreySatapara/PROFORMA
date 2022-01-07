@@ -1537,11 +1537,11 @@
                     $("#where_you_use_sm_div").append(`<div class="border rounded p-3 align-middle mt-3" id="use_sm_while_walk_drive">
                                 <h6>If you used while walking/driving have you met with an accident/bumped/tripped</h6>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="use_sm_while_walk_drive_radio" value="yes">
+                                    <input class="form-check-input" type="radio" name="use_sm_while_walk_drive_radio" value="yes" onClick ="Clicked()" id="y" >
                                     <label class="form-check-label" for="gender">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="use_sm_while_walk_drive_radio" value="no">
+                                    <input class="form-check-input" type="radio" name="use_sm_while_walk_drive_radio" value="no" onClick ="Clicked()" id="n" >
                                     <label class="form-check-label" for="gender">No</label>
                                 </div>
                                 
@@ -1559,12 +1559,24 @@
         //
         //
         //REMINING
-
-    $("input[name='use_sm_while_walk_drive_radio']").on('click', function(e) {
-        if (e.target.value == "yes") {
-            console.log('hello');
+    // @dev, added click in input use_sm_while_walk_drive_radio
+    function Clicked() {
+        if($("#y").prop("checked")){
+            //append block
+        } else {
+            //remove block
         }
-    })
+    }
+
+    // $("input[name='use_sm_while_walk_drive_radio']").on('click', function(e) {
+    //     //o = $('input[name=yes]:checked').val();
+    //     console.log("cszdmcmds")
+    //     // var val = $("input[value='yes']:checked").val();
+    //     // console.log(val)
+    //     // if (e.target == "yes") {
+    //     //     console.log('hello',e.target.value);
+    //     // }
+    // })
 
     /*s = `<div class="border rounded p-3 align-middle mt-3" id="use_sm_after_accident">
             <h6>Even after that event, have you continued to use social media while driving/walking</h6>
