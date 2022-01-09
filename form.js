@@ -296,7 +296,7 @@ function validateForm() {
 
 
 
-    valid = true;
+    //valid = true;
 
     if (valid) {
         document.getElementsByClassName("step")[currentTab].className += " finish";
