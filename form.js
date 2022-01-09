@@ -113,7 +113,8 @@ async function sendData() {
     data['A_q14'] = {}
 
     //PANDING TAB
-
+    var inx = 0;
+    data['A_q14']['general'] = []
     $('input[name="where_you_use_sm_radio"]:checked').each(function() {
         data['A_q14']['general'].push(this.value);
     });
@@ -121,15 +122,19 @@ async function sendData() {
         var use_sm_temp = $('input[name="use_sm_while_walk_drive_radio"]:checked').val();
         data['A_q14']['walking-driving'] = use_sm_temp;
         if (use_sm_temp == 'yes') {
-            data['A_q14']['walking-driving-continue'] = 0; //PANDING
+            data['A_q14']['walking-driving-continue'] = $('input[name="use_sm_after_accident_radio"]:checked').val(); //PANDING
         }
     }
     if ($('#where_you_use_sm_others').is(':checked')) {
-        data['A_q14'].push($('#use_sm_other_value').val());
+        data['A_q14']['general'].push($('#use_sm_other_value').val());
     }
 
-    data['what_you_first_check_sm'] = $("#what_you_first_check_sm option:selected").val();
 
+    var t = $("#what_you_first_check_sm option:selected").val();
+    data['what_you_first_check_sm'] = t;
+    if (t == 'others') {
+        data['what_you_first_check_sm'] = 'Others,' + $('what_you_first_check_sm_other_value').val()
+    }
 
     data['hear_sound_of_phone_ring'] = $('input[name="hear_sound_of_phone_ring"]:checked').val();
     data['fear_being_out_coverage_area'] = $('input[name="fear_being_out_coverage_area"]:checked').val();
@@ -166,15 +171,18 @@ async function sendData() {
     }
 
     //TAB4
+    row_index = 1;
     data['SM_Q'] = {}
     $('#SM_Q > tbody  > tr').each(function(index, tr) {
         var activity_name = $(tr.cells[0]).text();
         name_tag = 'sm_q' + row_index + '_radio';
         if (activity_name != '') {
-            data['which_sm_use'][activity_name] = $(`input[name="${name_tag}"]:checked`).val();
+            data['SM_Q'][activity_name] = $(`input[name="${name_tag}"]:checked`).val();
         }
+        row_index++;
     });
 
+    row_index = 1
     data['sm_offline_feel'] = {}
     $('#sm_offline_feel > tbody  > tr').each(function(index, tr) {
         var activity_name = $(tr.cells[0]).text();
@@ -182,6 +190,7 @@ async function sendData() {
         if (activity_name != '') {
             data['sm_offline_feel'][activity_name] = $(`input[name="${name_tag}"]:checked`).val();
         }
+        row_index++;
     });
 
 
@@ -197,7 +206,7 @@ async function sendData() {
 
     data['money_on_gaming'] = $('#money_on_gaming_number_id').val();
 
-
+    row_index = 1;
     data['gaming_table'] = {}
     $('#gaming_table > tbody  > tr').each(function(index, tr) {
         var activity_name = $(tr.cells[0]).text();
@@ -205,11 +214,41 @@ async function sendData() {
         if (activity_name != '') {
             data['gaming_table'][activity_name] = $(`input[name="${name_tag}"]:checked`).val();
         }
+        row_index++;
     });
-
     console.log(data)
+    sData(data);
+
+
 }
 
+function sData(final_data) {
+    $.ajax({
+        type: "POST",
+        url: 'https://niketproforma.el.r.appspot.com/add_data',
+        headers: {
+            "content-type": "application/json",
+        },
+        data: JSON.stringify(final_data),
+        success: function(result) {
+
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            if (jqXHR.status == 500) {
+                Swal.fire({
+                    icon: "error",
+                    title: "Internal Server Error Please try again later",
+                });
+            }
+            if (jqXHR.status == 400) {
+                Swal.fire({
+                    icon: "error",
+                    title: "Bad request",
+                });
+            }
+        },
+    });
+}
 
 function nextPrev(n) {
     var x = document.getElementsByClassName("tab");
@@ -230,7 +269,10 @@ function validateForm() {
     var x, y, i, valid = true;
     x = document.getElementsByClassName("tab");
     y = x[currentTab].getElementsByTagName("input");
-
+    var clg_name_select = document.getElementById("clg_name");
+    if (clg_name_select.value == "") {
+        clg_name_select.classList.add("border-danger");
+    }
     for (i = 0; i < y.length; i++) {
         if (!y[i].classList.contains("ignore_invalid")) {
             if (y[i].type == "radio") {
@@ -252,10 +294,8 @@ function validateForm() {
         }
     }
 
-    /*var clg_name_select = document.getElementById("clg_name");
-    if (clg_name_select.value == "") {
-        clg_name_select.classList.add("border-danger");
-    }*/
+
+
     valid = true;
 
     if (valid) {
