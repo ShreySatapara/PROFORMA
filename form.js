@@ -133,7 +133,7 @@ async function sendData() {
     var t = $("#what_you_first_check_sm option:selected").val();
     data['what_you_first_check_sm'] = t;
     if (t == 'others') {
-        data['what_you_first_check_sm'] = 'Others,' + $('what_you_first_check_sm_other_value').val()
+        data['what_you_first_check_sm'] = 'Others,' + $('#what_you_first_check_sm_other_value').val()
     }
 
     data['hear_sound_of_phone_ring'] = $('input[name="hear_sound_of_phone_ring"]:checked').val();
